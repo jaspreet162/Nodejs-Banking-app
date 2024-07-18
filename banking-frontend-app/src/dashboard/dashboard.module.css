@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    /* height: 10vh !important; */
+    display: flex;
+    background-color: #fff0e5;
+    width: vw;
+}
+
+.comp{
+    font-size: 33px;
+    margin :0px 0px 0px 36px;
+    width: 26%;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lr{
+  
+ display: flex;
+ flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    height:80vh;
+    width: 100vw;
+}
+
+.wb{
+    height: 80vh;
+    align-items: center !important ;
+    justify-content: center ;
+    width: 100%
+   
+}
+.wbimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50vw;
+}
+.dashcont{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+   justify-content:center !important;
+   align-items: center !important;
+   background:center/cover no-repeat url("../wms.jpeg") ;
+}
+.con1 {
+display: flex;
+flex-direction: row;
+margin-top:25%;
+margin:2.5vh 0% 0% 0%;
+
+}
+.con1>div{
+    margin:0% 3vw 0% 3vw;
+}
+.con2>div{
+    margin:0% 3vw 0% 3vw;
+}
+.con3>div{
+    margin:0% 3vw 0% 3vw;
+}
+.con2 {
+    display: flex;
+    flex-direction: row;
+    margin:7.5vh 0% 0% 0%;
+    
+    }
+.con3 {
+        display: flex;
+        flex-direction: row;
+        margin:7.5vh 0% 2.5% 0%;
+        
+}
+.containers{
+    background-color: #f37e20;
+    height: 10vh;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:5px solid  #f37e20;
+    border-radius: 15px;
+    font-size: 3vh;
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 550;
+  font-style: italic;
+  text-align: center;
+  cursor:  pointer !important;
+  margin: 2%;
+   
+}
+.containers:hover{
+    color: #f37e20;
+    border:5px solid #f37e20;
+    background-color: #fff0e5;;
+    cursor:  pointer !important;
+}
+.logopart{
+    display: flex;
+    flex-direction: row;
+    color: rgb(15, 5, 5);
+    list-style: none;
+    justify-content: left;
+    align-items: center;
+    margin :auto auto auto 50px;
+    font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  width: 50vw;
+
+}
+.logo{
+    height: 90px;
+    display: block;
+    width: 13%;
+}
+.nav{
+   color: rgb(15,5,5);
+   display: flex;
+   flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 2%;
+    width: 50vw;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    font-size: 26px;
+    font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  width: 33vw !important;
+  
+}
+ul>div{
+    height: 40px;
+    width: 130px;
+    border: solid 2px  #fff0e5;
+    border-radius:9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0e5;
+    margin-left: 2%;
+    margin-right: 3%}
+ul>div:hover{
+    color:#f37e20;
+    border: solid 2px  #f37e20;
+    background-color: white;
+    cursor: pointer;
+   
+}
+ul li{
+    text-wrap:nowrap
+}
+footer{
+    background-color:  #fff0e5;
+    width: vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(15,5,5) ;
+    font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+    font-size: 28px;
+    
+}
+@media  (max-width:850px) and (min-width:581px){
+    header{
+       height: 35vh !important;
+       display: flex !important;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .logopart{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        height: 50%;
+        width: 100vw;
+
+    }
+    .nav{
+        height: 50%;
+        margin:0px;
+        width:100vw;
+       display: flex;
+       align-items: center !important;
+       justify-content: center !important;
+       text-wrap: nowrap;
+      
+    }
+    .logo{
+        width: 22%;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height:98%
+    }
+    .comp{
+        text-wrap: nowrap;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        
+    }
+    
+    ul{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center ;
+        justify-items: center;
+        align-items: center ;
+        margin: auto;
+        text-align: center;
+        width: 80vw !important;
+        margin: 0px;
+    } 
+    li{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        width: auto;
+    }
+    footer{
+        height: 20vh;
+        text-wrap:balance;
+        text-align: center;
+    }
+    .lr{
+        height: 55vh;
+        width: 100vw;
+        margin:0px;
+        padding: 0px;
+    }
+    .wbimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55vh;
+        width: 50vw !important;
+    }
+    .wb{
+        height: 55vh;
+        width: 50vw !important;
+    }
+    .con1 {
+    display: flex;
+    flex-direction: row;
+    margin-top:25%;
+    margin:2.5vh 0% 0% 0%;
+    
+    }
+    .con1>div{
+        margin:0% 3vw 0% 3vw;
+    }
+    .con2>div{
+        margin:0% 3vw 0% 3vw;
+    }
+    .con3>div{
+        margin:0% 3vw 0% 3vw;
+    }
+    .con2 {
+        display: flex;
+        flex-direction: row;
+        margin:7.5vh 0% 0% 0%;
+        
+        }
+    .con3 {
+            display: flex;
+            flex-direction: row;
+            margin:7.5vh 0% 2.5% 0%;
+            
+    }
+    .containers{
+        background-color: #f37e20;
+        height: 10vh;
+        width: 18vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:5px solid  #f37e20;
+        border-radius: 15px;
+        font-size: 3vh;
+        color: white;
+        font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 550;
+      font-style: italic;
+      text-align: center;
+      cursor:  pointer !important;
+      margin: 2%;
+       
+    }
+    .containers:hover{
+        color: #f37e20;
+        border:5px solid #f37e20;
+        background-color: #fff0e5;;
+        cursor:  pointer !important;
+    }
+    .dashcont{
+        display: flex;
+        flex-direction: column;
+        justify-content:center!important;
+        align-items: center!important;
+        width: 50vw;
+        height: 55vh;
+     }
+     
+    
+
+    
+}
+@media screen and (max-width:579px) {
+    header{
+        height: 30% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .logopart{
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-self: center !important;
+        justify-content: center !important;
+        
+    }
+    .logo{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 50%;
+        height: 50%;
+        margin-left: 46%;
+       
+        
+    }
+    .comp{
+        display: flex;
+        align-items: center !important;
+        justify-content: center  !important;
+        text-align: center;
+        width: 50%;
+        height: 50%;
+        margin-left: 53%;
+       
+        
+        
+    }
+    .nav{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    ul{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+       margin-left: 46%;
+       
+    }
+    
+    .lr{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    }
+    .wb{
+        width: 100vw;
+        height: 50%;
+    }
+    .wbimg{
+        width: 100vw;
+        height: 50%;
+    }
+    .dashcont{
+        width: 100vw;
+        height: 50%;
+        
+    }
+    footer{
+       display: flex;
+       height: 90%;
+        text-wrap:balance;
+        text-align: center;
+        justify-content:center;
+        align-items: end;
+        font-size:20px ;
+        background-color:  #fff0e5;
+    }
+    .containers{
+        font-size: 12px !important;
+        text-wrap: balance;
+        width: 25vw;
+      
+    }
+  
+    
+    
+}
+@media screen and (width:580px) {
+    header{
+        height: 30% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .logopart{
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-self: center !important;
+        justify-content: center !important;
+        
+    }
+    .logo{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 50%;
+        height: 50%;
+        margin-left: 68%;
+       
+        
+    }
+    .comp{
+        display: flex;
+        align-items: center !important;
+        justify-content: center  !important;
+        text-align: center;
+        width: 50%;
+        height: 50%;
+        margin-left: 68%;
+       
+        
+        
+    }
+    .nav{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    ul{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+       margin-left: 46%;
+       
+    }
+    
+    .lr{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    }
+    .wb{
+        width: 100vw;
+        height: 50%;
+    }
+    .wbimg{
+        width: 100vw;
+        height: 50%;
+    }
+    .dashcont{
+        width: 100vw;
+        height: 50%;
+        
+    }
+    footer{
+       display: flex;
+       height: 90%;
+        text-wrap:balance;
+        text-align: center;
+        justify-content:center;
+        align-items: end;
+        font-size:20px ;
+        background-color:  #fff0e5;
+    }
+    .containers{
+        font-size: 12px !important;
+        text-wrap: balance;
+        width: 25vw;
+      
+    }
+    
+}
