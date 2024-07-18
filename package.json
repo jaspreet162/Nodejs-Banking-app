@@ -1,0 +1,23 @@
+{
+  "name": "banking-app",
+  "version": "1.0.0",
+  "description": "this is a sample project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaspreet Kaur",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.1.3"
+  }
+}
