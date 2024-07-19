@@ -1,5 +1,5 @@
 const { Client } = require('pg')
-require('dotenv').config();
+
 const clientConfig= {
 max:5,
 min:2,
