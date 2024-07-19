@@ -10,7 +10,7 @@ export function ShowData() {
   const piggylogo = require('../piggylogo.png');
 
   useEffect(() => {
-    fetch(`http://localhost:3100/showData`)
+    fetch(`https://nodejs-banking-app-backend.onrender.com/showData`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
