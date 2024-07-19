@@ -15,7 +15,7 @@ export function NewCustomer() {
     const balance=e.target.balance.value
 
     console.log(`Id ${acId} Name ${acNm} bal ${balance}`)
-    fetch('http://localhost:3100/create',{
+    fetch('https://nodejs-banking-app-backend.onrender.com/create',{
       method:'POST',
       headers:{
         'Accept':'application/json',
