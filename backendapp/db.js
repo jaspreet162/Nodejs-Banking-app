@@ -1,11 +1,12 @@
 const { Client } = require('pg')
-const client = new Client({
-   host: process.env.PSQL_HOST,
-    user: process.env.PSQL_USER,
-    password: process.env.PASSWORD,
-    database: process.env.PSQL_DATABASE,
-    port:  process.env.PSQL_PORT
-});
+
+   host: process.env.PG_HOST,
+    user: process.env.PG_USER,
+    password: process.env.PG_PASSWORD,
+    database: process.env.PG_DATABASE,
+    port:  process.env.PG_PORT;
+const client = new Client(clientConfig)
+clientConfig.connectionString=`postgres://${user}:${password}@${host}:${port}/${database}`;
 
 client.connect(err => {
     if (err) {
