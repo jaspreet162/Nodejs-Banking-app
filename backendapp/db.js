@@ -142,6 +142,6 @@ module.exports = {
 // createNewAccount({acId:1,acNm:'abc',balance:100})
 // withdraw({acId:2,amount:500});
 // deposit({acId:1,amount:2000});
-transfer({srcId:1,destId:2,amount:500})
+// transfer({srcId:1,destId:2,amount:500})
 // balance({acId:1})
 
