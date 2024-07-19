@@ -17,7 +17,7 @@ export function Balance(){
    
 
     console.log(`Id ${acId},name ${acNm}`)
-    fetch(`http://localhost:3100/balance/${acId}`)
+    fetch(`https://nodejs-banking-app-backend.onrender.com`)
     .then(res=>res.json())
     .then(json=>{setBal(json.bal)
              setName(json.acNm)
