@@ -1,13 +1,20 @@
 const { Client } = require('pg')
+const clientConfig= {
+max:5,
+min:2,
+idleTimeoutMillis:6000
+};
 
 const host= process.env.PG_HOST;
 const user= process.env.PG_USER;
 const password= process.env.PG_PASSWORD;
 const database= process.env.PG_DATABASE;
 const port=  process.env.PG_PORT;
-const client = new Client(clientConfig)
+
+
 clientConfig.connectionString=`postgres://${user}:${password}@${host}:${port}/${database}`;
 
+const client = new Client(clientConfig);
 client.connect(err => {
     if (err) {
         console.log('\n error in connectivity')
