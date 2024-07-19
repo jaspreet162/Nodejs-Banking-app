@@ -1,10 +1,10 @@
 const { Client } = require('pg')
 const client = new Client({
-    host: 'localhost',
-    user: 'admin',
-    password: 'admin',
-    database: 'template1',
-    post: 5432
+   host: process.env.PSQL_HOST,
+    user: process.env.PSQL_USER,
+    password: process.env.PASSWORD,
+    database: process.env.PSQL_DATABASE,
+    port:  process.env.PSQL_PORT
 });
 
 client.connect(err => {
