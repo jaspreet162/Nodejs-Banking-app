@@ -16,7 +16,7 @@ export function Transfer(){
     const amount=e.target.amount.value
 
     console.log(`Source Id ${srcId} , Destination Id ${destId} amount ${amount}`)
-    fetch('http://localhost:3100/transfer',{
+    fetch('https://nodejs-banking-app-backend.onrender.com/transfer',{
       method:'PUT',
       headers:{
         'Accept':'application/json',
