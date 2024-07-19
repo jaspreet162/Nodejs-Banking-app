@@ -1,6 +1,7 @@
 const express=require('express')
 const app=express()
 const port=3100
+require('dotenv').config();
 const cors=require('cors')
 app.use(cors())
 const { createNewAccount, withdraw, deposit, transfer, balance, showData,client } = require('./db')
