@@ -28,11 +28,11 @@ export function Withdraw(){
       if (json.sts === 'success') { // Assuming the response has a success field
         setMessage(`INR:${amount} is withdrawn successfully`);
       } else {
-        setMessage('Failed to deposit amount');
+        setMessage('Failed to withdrawing amount');
       }
     }).catch(err => {
       console.error(err);
-      setMessage('Error occurred while depositing amount');
+      setMessage('Error occurred while withdrawing amount');
     });
 };
   
