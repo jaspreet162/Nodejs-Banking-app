@@ -15,7 +15,7 @@ export function Withdraw(){
     const amount=e.target.amount.value
 
     console.log(`Id ${acId} amount ${amount}`)
-    fetch('http://localhost:3100/withdraw',{
+    fetch('https://nodejs-banking-app-backend.onrender.com/withdraw',{
       method:'PUT',
       headers:{
         'Accept':'application/json',
