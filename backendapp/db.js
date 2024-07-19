@@ -15,12 +15,12 @@ const port=  process.env.PG_PORT;
 clientConfig.connectionString=`postgres://${user}:${password}@${host}:${port}/${database}`;
 
 const client = new Client(clientConfig);
-client.connect(err => {
-    if (err) {
-        console.log('\n error in connectivity')
-        return
-    } console.log('\n connection successfull');
-});
+// client.connect(err => {
+//     if (err) {
+//         console.log('\n error in connectivity')
+//         return
+//     } console.log('\n connection successfull');
+// });
 
 const createNewAccount = ({ acId, acNm, balance },onCreate=undefined) => {
     client.query(`INSERT INTO account VALUES ($1,$2,$3)`, [acId, acNm, balance], (err, res) => {
