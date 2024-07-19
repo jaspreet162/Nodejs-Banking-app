@@ -15,7 +15,7 @@ export function Deposit() {
     const amount = e.target.amount.value
 
     console.log(`Id ${acId} amount ${amount}`)
-    fetch('https://nodejs-banking-app-backend.onrender.com', {
+    fetch('https://nodejs-banking-app-backend.onrender.com/deposit', {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
